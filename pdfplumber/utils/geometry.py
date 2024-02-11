@@ -264,7 +264,7 @@ def filter_edges(
     edges: Iterable[T_obj],
     orientation: Optional[str] = None,
     edge_type: Optional[str] = None,
-    min_length: T_num = 1,
+    min_length: T_num = 0,
 ) -> T_obj_list:
     if orientation not in ("v", "h", None):
         raise ValueError("Orientation must be 'v' or 'h'")
